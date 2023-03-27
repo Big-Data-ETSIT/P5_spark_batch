@@ -7,6 +7,6 @@ target
 project
 .bloop
 .bsp
-result/*.csv
-result/*.crc
+result*/*.csv
+result*/*.crc
 

@@ -1,12 +1,11 @@
 package es.upm.dit
 
 import org.apache.spark.sql.{SparkSession, SaveMode}
-import java.io.File
 
 object WordCountBatchJob{
   final val BASE_PATH = "../../P5_spark_batch"
   def main(args: Array[String]) {
-    // create SparkSession
+
     val spark = SparkSession
     .builder
     .appName("WordCountBatchJob")
@@ -37,7 +36,6 @@ object WordCountBatchJob{
                              .reduceByKey(_ + _)
                              .sortBy(_._2, ascending = false)
 
-    // save word to dataframe and then to CSV file
     wordCounts.toDF("Word", "Count")
               .coalesce(1) //in a single file, not recommended for huge csv files
               .write
@@ -46,7 +44,6 @@ object WordCountBatchJob{
               .format("csv")
               .save(resultFolder)
 
-    // stop SparkSession
     spark.stop()
   }
 }
