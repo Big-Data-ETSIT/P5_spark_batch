@@ -27,7 +27,7 @@ object WordCountBatchJob{
     .map(_._2)
 
     // count words in each file and clean words
-    val wordCounts = textFiles.flatMap(line => line.split(" "))
+    val wordCounts = textFiles.flatMap(line => line.split("\\W+"))
                              .map(word => (
                                 word
                                   .toLowerCase()
