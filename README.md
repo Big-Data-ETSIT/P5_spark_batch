@@ -90,7 +90,9 @@ Comprobar que se ha generado en la carpeta `P5_spark_batch/result` el .csv con e
 ### Bloque 2: Ejecutar el código con spark-submit.
 
 
-En el apartado anterior ejecutamos el código con sbt, es decir, sin emplear el motor de Big Data Apache Spark. En este apartado se va a desplegar en local, utilizando el comando spark-submit. Para ello primero debemos compilar el código y empaquetarlo (generar el .jar). Utilizaremos sbt:
+En el apartado anterior ejecutamos el código con sbt, es decir, sin emplear el motor de Big Data Apache Spark. En este apartado se va a desplegar en local, utilizando el comando spark-submit. 
+
+Para ello primero debemos compilar el código y empaquetarlo (generar el .jar). Utilizaremos sbt:
 
 ```
 sbt compile
@@ -104,7 +106,7 @@ Lanzar el programa con el comando spark-submit
 spark-submit --class "es.upm.dit.WordCountBatchJob" target/scala-2.12/word-count_2.12-1.0.jar
 ```
 
-**Pregunta 2: Explicar la diferencia entre ejecutar el job con spark-submit y con sbt**
+**Pregunta 2: Explicar la diferencia entre ejecutar el job con spark-submit y con sbt.**
 
 **Pregunta 3: ¿El entorno en el que estamos ejecutando la práctica (una máquina virtual dentro de nuestro ordenador personal) es un entrono válido para contar las palabras de un millón de libros? Justifique la respuesta.**
 
@@ -121,7 +123,7 @@ Además, debe ejecutarse con sbt y spark-submit.
 
 **Captura 1: código del object LongCountBatchJob.scala**
 
-**Captura 2: primeras líneas del .csv generado tras la ejecución con spark-submit**
+**Captura 2: primeras líneas del .csv generado tras la ejecución con spark-submit.**
 
 
 ## 7. Instrucciones para la Entrega y Evaluación.
