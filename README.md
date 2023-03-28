@@ -53,10 +53,10 @@ Instalar con sdkman Spark 3.1.2:
 sdk install spark 3.1.2
 ```
 
-Comprobar que la versión de Java instalada es la 8
+Instalar con sdkman Java 8:
 
 ```
-java -version
+sdk install java 8.0.302-open
 ```
 
 Descargar el repositorio:
