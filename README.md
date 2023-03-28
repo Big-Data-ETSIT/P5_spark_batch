@@ -18,7 +18,7 @@ Para realizar la práctica el alumno deberá tener instalado en su ordenador:
 - Herramienta GIT para gestión de repositorios [Github](https://git-scm.com/downloads)
 - Scala versión 2.12
 - Spark versión 3.1.2
-- SBT
+- SBT 1.8.2
 - Java 8
 - Máquina virtual con sistema operativo linux y distribución Ubuntu 22.04 (Disponible en el enlace compartido en moodle) 
 
@@ -59,12 +59,17 @@ Instalar con sdkman Java 8:
 sdk install java 8.0.302-open
 ```
 
+Instalar sbt:
+```
+sdk install sbt 1.8.2
+```
+
 Descargar el repositorio:
 ```
 git clone https://github.com/Big-Data-ETSIT/P5_spark_batch.git
 ```
 
-Descargar y descoprimir en la carpeta `P5_spark_batch/books` los libros sobre los que se contarán las palabras (https://drive.upm.es/s/4QS9qau4qa819Q1)
+Descargar y descoprimir en la carpeta `P5_spark_batch/books` los libros sobre los que se contarán las palabras (https://drive.upm.es/s/4QS9qau4qa819Q1). Los .txt deben estar dentro de la carpeta `P5_spark_batch/books`, sin que hayan otras carpetas dentro.
 
 
 ## 5. Tareas a realizar.
