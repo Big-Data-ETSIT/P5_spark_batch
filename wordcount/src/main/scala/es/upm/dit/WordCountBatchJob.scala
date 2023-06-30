@@ -36,8 +36,10 @@ object WordCountBatchJob{
                           .reduceByKey(_ + _)
                           .sortBy(_._2, ascending = false)
 
+    val df =  wordCounts.toDF("Word", "Count")
+    df.show()
 
-    wordCounts.toDF("Word", "Count")
+    df
               .coalesce(1) //in a single file, not recommended for huge csv files
               .write
               .mode(SaveMode.Overwrite)
