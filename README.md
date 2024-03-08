@@ -119,16 +119,32 @@ spark-submit --class "es.upm.dit.WordCountBatchJob" target/scala-2.12/word-count
 
 ### Bloque 3: Desarrollar la aplicación LongCountBatchJob.scala.
 
-En este apartado se pide crear un nuevo programa llamado `LongCountBatchJob.scala` que cuente las palabras largas (i.e., palabras con longitud mayor de 5 caracteres) y las guarde en un .csv en la carpeta `P5_spark_batch/result2`. 
+En este apartado se pide crear un nuevo programa llamado `LongCountBatchJob.scala` que modifique el rresultado del prograrma base (`WordCountBatchJob`) contando solo las palabras largas (i.e., palabras con longitud mayor de 5 caracteres) y las guarde en un .csv en la carpeta `P5_spark_batch/result2`. 
 
 Pista: utilizar la función `filter`. 
 
 Además, debe ejecutarse con sbt y spark-submit.
 
+### Bloque 4: Desarrollar la aplicación StartsACountBatchJob.scala.
 
-**Captura 1: código del object LongCountBatchJob.scala**
+En este apartado se pide crear un nuevo programa llamado `StartsACountBatchJob.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras largas que empiecen por 'a' y las guarde en un .csv en la carpeta `P5_spark_batch/result3` ordenadas de mayor a menor frecuencia. 
 
-**Captura 2: primeras líneas del .csv generado tras la ejecución con spark-submit.**
+Pista: utilizar la función `filter`. 
+
+Además, debe ejecutarse con sbt y spark-submit.
+
+### Bloque 5: Desarrollar la aplicación MinimumWordCountBatch.scala.
+
+En este apartado se pide crear un nuevo programa llamado `MinimumWordCountBatch.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras que aparecen más de 100 veces (>100) y devuelva la suma total de todas esas palabras. Deve devolver un único número. 
+
+Pista: utilizar la función `filter` y `reduce`. 
+
+Además, debe ejecutarse con sbt y spark-submit.
+
+
+**Captura 1: códigos con las modificaciones pedidas**
+
+**Captura 2: primeras líneas del .csv generado tras la ejecución con spark-submit de cada programa y resultado de MinimumWordCountBatch.scala.**
 
 
 ## 7. Instrucciones para la Entrega y Evaluación.
