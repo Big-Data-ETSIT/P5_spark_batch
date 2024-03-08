@@ -127,7 +127,7 @@ Además, debe ejecutarse con sbt y spark-submit.
 
 ### Bloque 4: Desarrollar la aplicación StartsACountBatchJob.scala.
 
-En este apartado se pide crear un nuevo programa llamado `StartsACountBatchJob.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras largas que empiecen por 'a' y las guarde en un .csv en la carpeta `P5_spark_batch/result3` ordenadas de mayor a menor frecuencia. 
+En este apartado se pide crear un nuevo programa llamado `StartsACountBatchJob.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras que empiecen por 'a' y las guarde en un .csv en la carpeta `P5_spark_batch/result3` ordenadas de mayor a menor frecuencia. 
 
 Pista: utilizar la función `filter`. 
 
