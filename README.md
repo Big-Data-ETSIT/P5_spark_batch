@@ -135,7 +135,7 @@ Además, debe ejecutarse con sbt y spark-submit.
 
 ### Bloque 5: Desarrollar la aplicación MinimumWordCountBatch.scala.
 
-En este apartado se pide crear un nuevo programa llamado `MinimumWordCountBatch.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras que aparecen más de 100 veces (>100) y devuelva la suma total de todas esas palabras. Deve devolver un único número. 
+En este apartado se pide crear un nuevo programa llamado `MinimumWordCountBatch.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras que aparecen más de 100 veces (>100) y devuelva la suma total de todas esas palabras. Debe devolver un único número. 
 
 Pista: utilizar la función `filter` y `reduce`. 
 
