@@ -38,6 +38,13 @@ Descarge el fichero de VM con extensión .ova e importelo en virtualbox.
 
 Dentro de la máquina virtual abra un terminal y realice los siguientes pasos.
 
+Instalar sdkman (linux):
+```
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+```
+
 Instalar con sdkman la versión de Scala 2.12:
 ```
 sdk install scala 2.12.15
@@ -127,7 +134,7 @@ Además, debe ejecutarse con sbt y spark-submit.
 
 ### Bloque 4: Desarrollar la aplicación StartsACountBatchJob.scala.
 
-En este apartado se pide crear un nuevo programa llamado `StartsACountBatchJob.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras que empiecen por 'a' y las guarde en un .csv en la carpeta `P5_spark_batch/result3` ordenadas de mayor a menor frecuencia. 
+En este apartado se pide crear un nuevo programa llamado `StartsACountBatchJob.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras largas que empiecen por 'a' y las guarde en un .csv en la carpeta `P5_spark_batch/result3` ordenadas de mayor a menor frecuencia. 
 
 Pista: utilizar la función `filter`. 
 
@@ -135,7 +142,7 @@ Además, debe ejecutarse con sbt y spark-submit.
 
 ### Bloque 5: Desarrollar la aplicación MinimumWordCountBatch.scala.
 
-En este apartado se pide crear un nuevo programa llamado `MinimumWordCountBatch.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras que aparecen más de 100 veces (>100) y devuelva la suma total de todas esas palabras. Debe devolver un único número. 
+En este apartado se pide crear un nuevo programa llamado `MinimumWordCountBatch.scala` que modifique el resultado del prograrma base (`WordCountBatchJob`) contando solo las palabras que aparecen más de 100 veces (>100) y devuelva la suma total de todas esas palabras. Deve devolver un único número. 
 
 Pista: utilizar la función `filter` y `reduce`. 
 
