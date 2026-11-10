@@ -16,10 +16,10 @@
 
 Para realizar la práctica el alumno deberá tener instalado en su ordenador:
 - Herramienta GIT para gestión de repositorios [Github](https://git-scm.com/downloads)
-- Scala versión 2.12
-- Spark versión 3.1.2
-- SBT 1.8.2
-- Java 8
+- Scala versión 2.13.18
+- Spark versión 4.1.1
+- SBT 1.10.11
+- Java 17
 - Máquina virtual con sistema operativo linux y distribución Ubuntu 22.04 (Disponible en el enlace compartido en moodle) 
 
 
@@ -45,30 +45,30 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 ```
 
-Instalar con sdkman la versión de Scala 2.12:
+Instalar con sdkman la versión de Scala 2.13.18:
 ```
-sdk install scala 2.12.15
+sdk install scala 2.13.18
 ```
 Y configurarla como la versión por defecto:
 ```
-sdk default scala 2.12.15
+sdk default scala 2.13.18
 ```
 
-Instalar con sdkman Spark 3.1.2:
+Instalar con sdkman Spark 4.1.1:
 
 ```
-sdk install spark 3.1.2
+sdk install spark 4.1.1
 ```
 
-Instalar con sdkman Java 8:
+Instalar con sdkman Java 17:
 
 ```
-sdk install java 8.0.302-open
+sdk install java 17.0.21.0+9-tem
 ```
 
 Instalar sbt:
 ```
-sdk install sbt 1.8.2
+sdk install sbt 1.10.11
 ```
 
 Descargar el repositorio:
