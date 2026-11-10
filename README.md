@@ -112,10 +112,10 @@ sbt package
 ```
 Comprobar que se genera el .jar en la carpeta `P5_spark_batch/wordcount/target/scala-2.12`
 
-Lanzar el programa con el comando spark-submit
+**Completa el comando anteriro para** Lanzar el programa con el comando spark-submit
 
 ```
-spark-submit --class "es.upm.dit.WordCountBatchJob" target/scala-2.12/word-count_2.12-1.0.jar
+spark-submit --class "es.upm.dit.WordCountBatchJob" target/scala-[TBC]/word-count_[TBC].[TBC]
 ```
 
 **Pregunta 2: Explicar la diferencia entre ejecutar el job con spark-submit y con sbt.**
