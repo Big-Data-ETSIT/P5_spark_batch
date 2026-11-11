@@ -20,8 +20,7 @@ Para realizar la práctica el alumno deberá tener instalado en su ordenador:
 - Spark versión 4.1.1
 - SBT 1.10.11
 - Java 17
-- Máquina virtual con sistema operativo linux y distribución Ubuntu 22.04 (Disponible en el enlace compartido en moodle) 
-
+- Ordenadores del laboratorio, Linux o Mac
 
 ## 3. Descripción de la práctica
 
@@ -32,11 +31,9 @@ La práctica se desarrolla en tres bloques en donde se pretende ejemplificar com
 
 ## 4. Inicializar el entorno.
 
-Para la realización de la práctica se ha provisionado una máquina virtual con sistema operativo linux y distribución Ubuntu. En los recursos de Moodle de la asignatura se puede acceder al enlace de descarga.
-
 Descarge el fichero de VM con extensión .ova e importelo en virtualbox. 
 
-Dentro de la máquina virtual abra un terminal y realice los siguientes pasos.
+Dentro de la máquina abra un terminal y realice los siguientes pasos.
 
 Instalar sdkman (linux):
 ```
@@ -120,7 +117,7 @@ spark-submit --class "es.upm.dit.WordCountBatchJob" target/scala-[TBC]/word-coun
 
 **Pregunta 2: Explicar la diferencia entre ejecutar el job con spark-submit y con sbt.**
 
-**Pregunta 3: ¿El entorno en el que estamos ejecutando la práctica (una máquina virtual dentro de nuestro ordenador personal) es un entrono válido para contar las palabras de un millón de libros? Justifique la respuesta.**
+**Pregunta 3: ¿El entorno en el que estamos ejecutando la práctica (un ordenador personal) es un entrono válido para contar las palabras de un millón de libros? Justifique la respuesta.**
 
 
 
